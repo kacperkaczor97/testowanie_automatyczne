@@ -2,7 +2,6 @@ package rownanie;
 
 import java.util.Scanner;
 
-
 public class rownanie {
  
     public static void main(String[] args) {
