@@ -2,10 +2,11 @@ package rownanie;
 
 import java.util.Scanner;
 
-public class zadanie {
+public class Zadanie2 {
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
+		System.out.println("Wyliczanie X");
 		System.out.println("Podaj a ");
 		double a = in.nextDouble();
 		System.out.println("Podaj b ");
@@ -13,8 +14,8 @@ public class zadanie {
 		System.out.println("Podaj c ");
 		double c = in.nextDouble();
 		
-		rownanie rownanie = new rownanie();
-		double wynik = rownanie.Rownanie(a, b, c);
+		X rownanie = new X();
+		double wynik = rownanie.ZmiennaX(a, b, c);
 		System.out.println(wynik);
 		
 		
