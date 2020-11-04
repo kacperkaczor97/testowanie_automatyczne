@@ -13,22 +13,22 @@ class testy {
 	@Test
     public void testrownanie1() {
          
-        double result = rownanie.Rownanie(2, 3, 4);
-        assertEquals(2.0, result);
+        double resultdelta = rownanie.Rownanie(2, 5, 6);
+        assertEquals(-23.0, resultdelta);
     }
 	
 	@Test
     public void testrownanie2() {
          
-        double same = rownanie.Rownanie(3, 4, 5);
-        assertSame(3.0, same);
+        double resultx = rownanie.Rownanie(3, 4, 5);
+        assertEquals(-44.0, resultx);
     }
 	
 	 @Test
 	    public void testrownanie3() {
 		 
-		 double notsame = rownanie.Rownanie(2, 5, 6);
-	    	assertNotSame(2.0, notsame);
+		 double resultx1 = rownanie.Rownanie(2, 5, 6);
+	    	assertEquals(-23.0, resultx1);
 	    }
 
 }
