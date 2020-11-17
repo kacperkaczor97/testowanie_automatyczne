@@ -8,6 +8,9 @@ ch.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 ch.setFormatter(formatter)
 logger.addHandler(ch)
+fh = logging.FileHandler('Test1ChromeLog.log')
+fh.setLevel(logging.DEBUG)
+logger.addHandler(fh)
 
 driver = webdriver.Chrome(executable_path='C:\Drivers\chromedriver.exe')
 
